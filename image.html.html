@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Image Picker</title>
+        <style type="text/css">
+            body{
+                background-color:rgb(155, 206, 172);
+                background-repeat: no-repeat;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <h1>Image Picker</h1>
+        <h3>Makanan daerah</h3>
+        <select onchange="gantigambar();" id="listgambar">
+            <option value="masakan.jpg">Masakan Nusantara</option>
+            <option value="padang.jpg">Rendang</option>
+            <option value="Gudeg.jpg">Gudeg</option>
+            <option value="keraktelor.jpg">Kerak Telor</option>
+            <option value="aceh.jpg">Mie Aceh</option>
+            <option value="lampungseruit.jpg">Seruit</option>
+            <option value="Sotobanjar.jpg">Soto Banjar</option>
+        </select>
+        <img src="masakan.jpg" style="width: 100%" id="gambar">
+    </body>
+    <script type="text/javascript"></script>
+        function gantigambar()
+        {
+            let gambar = document.getElementById("listgambar").value;
+            document.getElementById("gambar").src = gambar;alert("Ini Gambar"+gambar);
+        }
+    </script>
+</html>

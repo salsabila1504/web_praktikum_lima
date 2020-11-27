@@ -26,7 +26,6 @@
             document.getElementById('pesan').innerHTML = input;
             console.log(input)
         }
-  
     </script>
 </body>
 </html>
